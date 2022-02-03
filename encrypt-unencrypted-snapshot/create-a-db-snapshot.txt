@@ -1,0 +1,23 @@
+To create a DB snapshot: 
+
+Sign in to the AWS Management Console and open the Amazon RDS console. https://console.aws.amazon.com/rds/
+Click Databases in the navigation pane to choose the DB cluster for which you want to take a snapshot. 
+For Actions, choose Take snapshot. We need to capture the latest cluster snapshot.
+
+
+Share Aurora MySQL snapshot with another Account:
+
+      In source Account ID share the unencrypted snapshot with the target Account ID - 
+
+   Choose snapshot from navigation pane, select fulfillment snapshot that you want to share.  
+   For Actions choose share snapshot.
+   Indicate the destination Account ID # and select Save.
+
+   To Encrypt unencrypted Snapshot:
+
+In the destination Account, ID choose snapshots from the navigation pane, select the snapshot that you want to encrypt.
+For Actions choose copy snapshot.
+
+Provide New DB snapshot identifier name and select Enable encryption and use a (default) aws/rds master key from the list Choose copy snapshot.
+
+
